@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "pamoja_theme.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in pamoja_theme.scss */
+.pamoja_theme {
+  @include addons;
+  @include pamoja_theme;
+}
